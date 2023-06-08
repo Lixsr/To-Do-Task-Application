@@ -1,7 +1,5 @@
 package com.example.to_do_task_application;
-
 import javafx.scene.control.ListView;
-
 import java.io.*;
 
 public class Writer {
