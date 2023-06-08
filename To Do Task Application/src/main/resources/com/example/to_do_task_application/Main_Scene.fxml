@@ -16,7 +16,7 @@
             <Font size="36.0" />
          </font>
       </Text>
-      <ListView fx:id="Tasks_ListView" layoutX="42.0" layoutY="150.0" prefHeight="200.0" prefWidth="301.0" />
+      <ListView fx:id="tasks_ListView" layoutX="42.0" layoutY="150.0" prefHeight="200.0" prefWidth="301.0" />
       <Button layoutX="364.0" layoutY="302.0" mnemonicParsing="false" onAction="#onRemoveTask" prefHeight="48.0" prefWidth="189.0" text="REMOVE" />
       <HBox layoutX="42.0" layoutY="93.0" prefHeight="48.0" prefWidth="511.0" spacing="20.0">
          <children>
