@@ -9,26 +9,32 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearSelection" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.to_do_task_application.Controller">
+<AnchorPane id="BG_main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clearSelection" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.to_do_task_application.Controller">
    <children>
-      <Text fill="#6b0303" layoutY="60.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="0.6" text="To Do App" textAlignment="CENTER" wrappingWidth="600.0">
+      <Text fill="#046104" layoutY="60.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="0.6" text="To Do App" textAlignment="CENTER" wrappingWidth="600.0">
          <font>
             <Font size="44.0" />
          </font>
       </Text>
-      <ListView fx:id="tasks_ListView" layoutX="42.0" layoutY="150.0" prefHeight="200.0" prefWidth="301.0">
+      <ListView id="tasksList" fx:id="tasks_ListView" layoutX="42.0" layoutY="150.0" prefHeight="200.0" prefWidth="301.0">
          <opaqueInsets>
             <Insets top="9.0" />
          </opaqueInsets></ListView>
-      <Button layoutX="364.0" layoutY="302.0" mnemonicParsing="false" onAction="#onRemoveTask" prefHeight="48.0" prefWidth="189.0" text="REMOVE" />
+      <Button id="btRemove" layoutX="362.0" layoutY="302.0" mnemonicParsing="false" onAction="#onRemoveTask" prefHeight="50.0" prefWidth="176.0" text="REMOVE" textAlignment="CENTER" textFill="#ededed">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
       <HBox layoutX="42.0" layoutY="93.0" prefHeight="48.0" prefWidth="511.0" spacing="20.0">
          <children>
-            <TextField fx:id="task" alignment="CENTER" onAction="#onAddTask" prefHeight="48.0" prefWidth="302.0" promptText="Add a New Task">
+            <TextField id="taskInput" fx:id="task" alignment="CENTER" onAction="#onAddTask" prefHeight="48.0" prefWidth="302.0" promptText="Add a New Task">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </TextField>
-            <Button mnemonicParsing="false" onAction="#onAddTask" prefHeight="56.0" prefWidth="189.0" text="ADD" />
+            <Button id="btAdd" mnemonicParsing="false" onAction="#onAddTask" prefHeight="48.0" prefWidth="176.0" text="ADD" textFill="#dddddd">
+               <font>
+                  <Font size="21.0" />
+               </font></Button>
          </children>
          <opaqueInsets>
             <Insets />

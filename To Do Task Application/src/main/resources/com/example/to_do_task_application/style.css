@@ -1,0 +1,16 @@
+#BG_main{
+    -fx-background-color: linear-gradient(to left,Cyan, lightGreen);
+}
+#tasksList{
+    -fx-background-color: white;
+}
+#taskInput{
+    -fx-border-color: black;
+}
+#btAdd{
+    -fx-background-color: darkgreen;
+}
+#btRemove{
+    -fx-background-color: #330601;
+}
+
